@@ -4,7 +4,7 @@ options missing="" ;
 
 
 
-/*DMマニュアルチェック用データ作成とCSVエクスポート*/
+
 %macro set_dmReview2(ds,outFileName,SettingFileName,CodeName,VisitName,RepeatName);
 
 	/*設定ファイルから設定データ抽出*/
@@ -168,7 +168,6 @@ options missing="" ;
 
 %mend setting_DS;
 
-/*チェック結果をCSVでエクスポート*/
 %macro Export_CSV(Ds,csv_name);
 	PROC EXPORT DATA= &ds. OUTFILE= "&DM_Data.\&csv_name..csv" DBMS=CSV REPLACE LABEL; PUTNAMES=YES; RUN;
 %mend;
@@ -178,8 +177,8 @@ options missing="" ;
 
 
 
-/*チェック結果をExcelでエクスポート*/
-ods excel file="&DM_Data.\&&_today4._&Site._review.xlsx" ;
+/*チェック結果をExcelにエクスポート*/
+ods excel file="&DM_Data.\&&_today4._.xlsx" ;
     proc print data=DM3 label;
     run;
 ods excel close;
