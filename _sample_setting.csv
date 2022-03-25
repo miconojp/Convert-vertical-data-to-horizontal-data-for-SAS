@@ -1,0 +1,15 @@
+**** Setting Variables ****,,,
+MAINCODE,LABEL,SUBCODE,FORMAT
+WBC,”’ŒŒ‹…”,WBC,
+RBC,ÔŒŒ‹…”,RBC,
+PLT,ŒŒ¬”Â,PLT,
+LBYN,ŽÀŽ{—L–³,LBYN,LBYN_
+**** Setting Visits ****,,,
+VISIT,VISIT2,,
+SCREENING,SCREENING,,
+VISIT1,VISIT1,,
+VISIT2_over,VISIT2,,
+**** Setting Code List ****,,,
+FMTNAME,START,LABEL,
+LBYN_,0,‚È‚µ,
+LBYN_,1,‚ ‚è,
