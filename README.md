@@ -4,3 +4,4 @@ Macro to expand vertical data like SDTM to horizontal data, renaming variables a
 
 
 SDTMのような縦型データを横型データに展開するマクロです。Seetingファイルで変数やVISITのリネームやコード値の設定を行います。出来上がったデータはCSVにエクスポートされます。またExcelとしてシートごとまとめて生成させることもできます。
+あらかじめSample_data2をインポートしておいてください。
